@@ -1,0 +1,46 @@
+<div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+  <!--
+      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+      Tip 2: you can also add an image using data-image tag
+  -->
+  <div class="logo">
+    <a href="http://www.sillyhatxu.com" class="simple-text logo-normal">
+      Sillyhat Xu
+    </a>
+  </div>
+  <div class="sidebar-wrapper">
+    <ul class="nav">
+      <li class="nav-item" routerLinkActive="active">
+        <a [routerLink]="['/dashboard']" class="nav-link">
+          <i class="material-icons">dashboard</i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a [routerLink]="['/services']" class="nav-link">
+          <i class="material-icons">storage</i>
+          <p>Services</p>
+        </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a [routerLink]="['/logs']" class="nav-link">
+          <i class="material-icons">search</i>
+          <p>Logs</p>
+        </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a [routerLink]="['/notifications']" class="nav-link">
+          <i class="material-icons">notifications</i>
+          <p>Notifications</p>
+        </a>
+      </li>
+      <li class="nav-item active-pro" routerLinkActive="active">
+        <a [routerLink]="['/upgrade']" class="nav-link">
+          <i class="material-icons">unarchive</i>
+          <p>Upgrade to PRO</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
